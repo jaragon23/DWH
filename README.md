@@ -33,8 +33,13 @@ Along with geographic and depth metadata: `Date · Latitude · Longitude · Dept
 
 ---
 
-## 👨‍🔬 Supervisor & Institution
+## 👨‍🔬 Mentor, Supervisor & Institution
 
+***Mentor:** Elisa Baldrighi, PhD
+- Research Assistant Professor
+- Marine Biology lab.
+- Department of Biology
+- University of Nevada, Reno
 **Prof. Jeff Baguley**
 - Chief of the Marine Ecology Lab, University of Nevada, Reno
 - Deep-sea benthic ecologist, specialist in meiofauna
@@ -82,7 +87,23 @@ Following positive feedback on earlier meiofauna and taxa maps, Prof. Baguley re
 
 **Output:** A publication-ready heatmap image showing which families dominate at which stations across the Gulf of Mexico sampling area. Supervisor (Elisa) confirmed the approach and sent the 2010 dataset to continue the multi-year series.
 
-**Years in progress:** 2010 ✅ (data received) · 2011 · 2014 · 2022 ✅
+**Years completed:** 2010 ✅ · 2011 ✅ · 2014 ✅ · 2022 ✅
+
+---
+
+### 🗺️ Heatmap Output — 2010
+
+![Harpacticoid Family Abundance by Station (2010)](outputs/Heatmap_Harpacticoid_family_2010.png)
+
+**Key observations from the 2010 heatmap:**
+- **Ameiriidae** is the dominant family overall, with peak abundances at stations **LBNL4** (~300+) and **LBNL9** (~330+)
+- **Miraciidae** shows a notable spike at **LBNL9** (~110) and a secondary presence at station **2.21**
+- **Ectinosomatidae** shows a moderate peak at station **D050S**
+- **Tisbidae** is sparsely distributed but present across several stations
+- The majority of families show near-zero abundance across most stations, consistent with the patchy distribution typical of deep-sea benthic communities
+- The **LBNL station cluster** (LBNL1, LBNL4, LBNL7, LBNL9) shows the highest overall activity — worth flagging for comparison against post-spill years (2011, 2014, 2022)
+
+---
 
 ---
 
@@ -115,6 +136,57 @@ Assigned to conduct a systematic literature search to build a scientific referen
 - Fisher et al. (2016) — direct assessment of DWH impact on deep-sea ecosystems
 
 **Status at reporting:** Research framework established, initial passes complete across all three topic areas, work ongoing through the following Monday. Supervisor (Elisa) invited for a progress review meeting.
+
+### 🗺️ Heatmap Output — 2011
+
+![Harpacticoid Family Abundance by Station (2011)](outputs/Heatmap_Harpacticoid_family_2011.png)
+
+**Key observations from the 2011 heatmap:**
+- **Ameiridae** remains the dominant family, now with peak abundances at **D044S**, **NF006MOD**, **D034S**, and **LBNL4** — a broader geographic spread compared to 2010
+- **Ectinosomatidae** shows a notable spike at **NF012** (~160), which was largely absent in 2010 — a potential indicator of post-spill community shifts
+- **Canthocamptidae** shows a strong presence at **LBNL4**, suggesting this station remained a hotspot one year post-spill
+- **Cletopsyllidae** shows moderate activity at **LBNL1**, a new appearance not prominent in 2010
+- Overall family diversity appears broader in 2011 with more families showing detectable presence across stations
+
+---
+
+### 🗺️ Heatmap Output — 2014
+
+![Harpacticoid Family Abundance by Station (2014)](outputs/Heatmap_Harpacticoid_family_2014.png)
+
+**Key observations from the 2014 heatmap:**
+- **Peak abundances are notably lower** across the board (~160 max vs ~330 in 2010) — a potential signal of longer-term community suppression following the spill
+- **Cletopsyllidae** emerges as the dominant peak at **NF006MOD** (~170), a family that was minor in prior years
+- **Canthocamptidae** shows consistent distribution across multiple stations, becoming one of the more broadly distributed families by 2014
+- **Ameiridae** remains present but at reduced peak levels compared to 2010 and 2011
+- **Miraciidae** shows a moderate presence at **LBNL7**, continuing its appearance from prior years
+- The station **NF006MOD** appears as a new hotspot, replacing the LBNL cluster that dominated in 2010
+
+---
+
+### 🗺️ Heatmap Output — 2022
+
+![Harpacticoid Family Abundance by Station (2022)](outputs/Heatmap_Harpacticoid_family_2022.png)
+
+**Key observations from the 2022 heatmap:**
+- **Ameiridae** again dominates with peaks at **D031S** (~150) and **2.21**, consistent with its role as the most resilient family across all years
+- **Family diversity is the highest across all four years** — 21+ families showing detectable presence, suggesting longer-term community recovery
+- **Ectinosomatidae** shows a broad, low-level distribution across many stations — a wider spread than any prior year
+- **Canthocamptidae** and **Miraciidae** maintain consistent presence, indicating these families stabilized as part of the recovering community
+- **The LBNL station cluster** shows reduced dominance compared to 2010, with abundance more evenly spread across the full station range
+
+---
+
+### 📈 Cross-Year Summary
+
+| Year | Max Abundance | Dominant Family | Notable Pattern |
+|------|--------------|-----------------|-----------------|
+| 2010 | ~330 | Ameiridae | LBNL cluster hotspot; pre/early spill baseline |
+| 2011 | ~290 | Ameiridae | Broader spread; Ectinosomatidae spike emerges |
+| 2014 | ~170 | Cletopsyllidae / Canthocamptidae | Reduced peak abundance; NF006MOD becomes hotspot |
+| 2022 | ~155 | Ameiridae | Highest family diversity; community recovery pattern |
+
+> These four heatmaps together provide a visual timeline of how the harpacticoid copepod community in the Gulf of Mexico responded to and recovered from the 2010 Deepwater Horizon oil spill.
 
 ---
 
