@@ -10,8 +10,8 @@ The internship project focused on long-term biological and environmental data fr
 
 ## Project Context
 
-**Project area:** Deep-sea benthic community recovery after the Deepwater Horizon oil spill
-- **Institution:** University of Nevada, Reno — Marine Ecology Lab
+- **Project Title:** Assessing the deep-sea benthic communities’ recovery after the Deep-Water Horizon oil spill using long-term biological and environmental data
+- **Institution:** University of Nevada, Reno
 - **Student:** Jeffery Aragon, College of Southern Nevada
 - **Training background:** Python Data Analytics
 
@@ -24,10 +24,9 @@ The core goal was to standardize, reorganize, and validate raw meiofauna abundan
 - University of Nevada, Reno
 
 **Professor:** Jeff Baguley
-- Chief of the Marine Ecology Lab
+- Professor of Human Anatomy, Chief of the Marine Ecology Lab
+- Deep-Sea Benthic Ecologist Expert in Meiofauna 
 - University of Nevada, Reno
-
-- **Student:** Jeffery Aragon | College of Southern Nevada, Las Vegas 
 ---
 ## Project Scope
 
@@ -190,7 +189,7 @@ Harpacticoid Family Abundance by Station (2010)
 - Overall family diversity appears broader in 2011, with more families detectable across stations
 
 #### Heatmap Output — 2014
-![Harpacticoid Family Abundance by Station (2014)]
+Harpacticoid Family Abundance by Station (2014)
 
 - Peak abundances are notably lower across the board (~160 max vs ~330 in 2010) — a potential signal of longer-term community suppression following the spill
 - **Cletopsyllidae** emerges as the dominant peak at **NF006MOD** (~170), a family that was minor in prior years
@@ -200,14 +199,14 @@ Harpacticoid Family Abundance by Station (2010)
 - **NF006MOD** appears as a new hotspot, replacing the LBNL cluster that dominated in 2010
 
 #### Heatmap Output — 2022
-![Harpacticoid Family Abundance by Station (2022)]
+Harpacticoid Family Abundance by Station (2022)
 
 - **Ameiridae** again dominates with peaks at **D031S** (~150) and **2.21**, consistent with its role as the most resilient family across all years
 - Family diversity is the highest across all four years — 21+ families showing detectable presence, suggesting longer-term community recovery
 - **Ectinosomatidae** shows a broad, low-level distribution across many stations — wider spread than any prior year
 - **Canthocamptidae** and **Miraciidae** maintain consistent presence, indicating these families stabilized as part of the recovering community
 - The **LBNL station cluster** shows reduced dominance compared to 2010, with abundance more evenly spread across the full station range
-- 
+  
 ### -- Multi-Year Harpacticoid Heatmap Generator -- `Heatmap_Harpacticoid.py` 
 Produces a station-by-family abundance heatmap from any year's harpacticoid dataset. The same script is reused across the 2010, 2011, 2014, and 2022 datasets by swapping the input file path.
 
