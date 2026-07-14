@@ -1,3 +1,141 @@
+DWH Meiofauna Data Analytics Internship
+This repository documents my work as a Data Analytics Intern with the Marine Ecology Lab at the University of Nevada, Reno, as part of the Nevada NSF EPSCoR Harnessing the Data Revolution for Fire Science (HDRFS) data analytics training and research internship pathway.
+The internship project focused on long-term biological and environmental data from deep-sea benthic communities in the Gulf of Mexico, connected to research on ecological recovery following the Deepwater Horizon oil spill. My role centered on cleaning, standardizing, validating, and visualizing meiofauna and harpacticoid copepod abundance data so it could support scientific analysis, reporting, and eventual public repository submission.
+> **Data note:** Raw and processed research datasets are not included in this public repository because they are part of ongoing unpublished research. This repo contains documentation, reproducible script templates, and project notes only.
+---
+Project Context
+Program: Nevada NSF EPSCoR HDRFS Data Analytics Training / Research Internship  
+Project area: Deep-sea benthic community recovery after the Deepwater Horizon oil spill  
+Institution: University of Nevada, Reno — Marine Ecology Lab  
+Student: Jeffery Aragon, College of Southern Nevada  
+Training background: Python Data Analytics
+Mentor / Supervisor
+Elisa Baldrighi, PhD  
+Research Assistant Professor, Department of Biology, University of Nevada, Reno
+Prof. Jeff Baguley  
+Marine Ecology Lab, University of Nevada, Reno; deep-sea benthic ecologist and meiofauna specialist
+---
+Project Summary
+The project involved reorganizing and validating Gulf of Mexico meiofauna abundance datasets collected during multiple oceanographic sampling years. The primary goal was to transform raw spreadsheet-based biological data into a cleaner, standardized structure aligned with a published reference format.
+The work supported broader ecological research questions about biodiversity patterns, community composition, environmental variability, and possible long-term recovery patterns after the Deepwater Horizon oil spill.
+---
+Objectives
+Standardize raw meiofauna abundance spreadsheets to match a published reference format.
+Validate station-level metadata, including latitude, longitude, depth, and sediment fraction information.
+Reformat taxonomic abundance data for downstream analysis.
+Generate heatmap visualizations of harpacticoid copepod family abundance across sampling years.
+Conduct bibliographic research to support literature review and scientific interpretation.
+Document a reproducible workflow using Python, pandas, matplotlib, seaborn, and spreadsheet-based QA methods.
+---
+Datasets Referenced
+File	Role
+`Bourque_etal_PS2309_macrofauna`	Published reference/example format
+`MDBC_2022_meio_coral`	Meiofauna coral dataset requiring reformatting
+`MEIOFAUNA ABUNDANCE 2022_updated`	Primary meiofauna abundance dataset
+`Harpacticoid_family_2022_Dec.02.2024_Bang`	Harpacticoid copepod family identification data
+`2010_COPEPODA`, `2011`, `2014`, `2022` datasets	Multi-year harpacticoid heatmap inputs
+Common biological columns included taxonomic groups such as:
+`NEMA`, `COPE`, `NAUP`, `BIVAL`, `GPOD`, `ACARI`, `PLATY`, `OLIGO`, `SIPUN`, `APLAC`, `ECHINO`
+Common metadata fields included:
+`Date`, `Latitude`, `Longitude`, `Depth`, `Fraction_upper_depth`, `Fraction_lower_depth`
+---
+Work Completed
+1. SEC Column Transformation
+The `SEC` column used depth-range strings such as `0-10cm`. To match the target reference format, the column was split into two numeric columns:
+`Fraction_upper_depth`
+`Fraction_lower_depth`
+The workflow removed text suffixes, stripped whitespace, converted values to numeric types, dropped the original `SEC` column, and repositioned the new columns into the expected order.
+2. Coordinate Validation
+Latitude, longitude, and depth metadata were compared across original and processed files to confirm that the transformation process did not alter station-level geographic information.
+3. Harpacticoid Family Heatmaps
+Heatmaps were created for harpacticoid copepod family abundance across multiple years:
+2010
+2011
+2014
+2022
+Each heatmap used family names on one axis, station IDs on the other axis, and abundance counts as the color intensity.
+4. Bibliographic Research
+A structured literature search was conducted across three topic areas:
+Topic Area	Sources Found
+Biodiversity patterns	15
+Nematodes and harpacticoids	14
+Marine oil spill / Deepwater Horizon impacts	15
+Total	44
+Search methods included Boolean queries, citation mapping, advanced search syntax, AI-assisted abstract screening, and structured logging of search terms.
+5. Harpacticoid Family Table Reformatting
+The `Harpacticoid_family_2022` sheet was reorganized station-by-station to match the provided example format. Formatting inconsistencies were identified and flagged for scripted cleanup rather than manual correction.
+---
+Cross-Year Heatmap Summary
+Year	Approx. Max Abundance	Dominant Family	Notable Pattern
+2010	~330	Ameiridae	LBNL cluster hotspot; pre/early spill baseline
+2011	~290	Ameiridae	Broader spread; Ectinosomatidae spike emerges
+2014	~170	Cletopsyllidae / Canthocamptidae	Reduced peak abundance; NF006MOD becomes hotspot
+2022	~155	Ameiridae	Highest family diversity; possible recovery pattern
+Together, the heatmaps provide a visual timeline of harpacticoid copepod community structure across sampling years in the Gulf of Mexico.
+---
+Repository Structure
+```text
+DWH-Internship-UNR/
+├── README.md
+├── LICENSE
+├── .gitignore
+├── requirements.txt
+├── scripts/
+│   ├── dwh_sec_split.py
+│   └── heatmap_harpacticoid.py
+├── data/
+│   └── README.md
+└── outputs/
+    └── README.md
+```
+---
+Python Scripts
+`scripts/dwh_sec_split.py`
+Splits a spreadsheet `SEC` depth-range column into numeric upper and lower sediment fraction columns, exports a cleaned workbook, and optionally validates geographic metadata.
+`scripts/heatmap_harpacticoid.py`
+Generates a heatmap of harpacticoid family abundance by station from an Excel workbook.
+---
+Example Setup
+```bash
+python -m venv .venv
+source .venv/bin/activate  # macOS/Linux
+pip install -r requirements.txt
+```
+Run SEC transformation:
+```bash
+python scripts/dwh_sec_split.py \
+  --input "data/MEIOFAUNA ABUNDANCE 2022_updated.xlsx" \
+  --output "outputs/dwh_jt1.xlsx" \
+  --reference "data/MEIOFAUNA ABUNDANCE 2022_updated.xlsx" \
+  --diff-output "outputs/coordinate_diff.xlsx"
+```
+Run heatmap generation:
+```bash
+python scripts/heatmap_harpacticoid.py \
+  --input "data/Harpacticoid_family_2022.xlsx" \
+  --output "outputs/Heatmap_of_Harpacticoid_family_2022.png" \
+  --title "Harpacticoid Family Abundance by Station (2022 Data Samples)"
+```
+---
+Key Takeaways
+Applied Python data-wrangling skills to real scientific research data.
+Used pandas to automate formatting tasks that would be tedious and error-prone manually.
+Learned the importance of data standardization for reproducibility and public data sharing.
+Practiced scientific visualization using seaborn and matplotlib.
+Strengthened technical communication through progress updates, literature review, and documentation.
+Connected data analytics training to real-world ecological research and environmental science.
+---
+Related Resources
+USGS Data Catalog
+University of Nevada, Reno
+NSF EPSCoR
+---
+Status
+Work in progress. This repository is intended as a cleaned public-facing portfolio and documentation version of the internship project, not as a release of unpublished lab data.
+
+
+---------------------
+
 # Deep Water Horizon Meiofauna Data Analytics Internship
 **University of Nevada, Reno — Marine Ecology Lab**
 **Spring 2025 | Remote Internship | Data Analytics**
