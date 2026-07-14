@@ -260,32 +260,33 @@ print(f"Heatmap saved to {file_out}")
 ### Task 4 — Bibliographic Research & Literature Review
 Assigned to conduct a systematic literature search to build a scientific reference base supporting the lab's ongoing research, across three core topic areas relevant to the DWH project and meiofauna ecology.
 
-Developed a bibliographic search with Python using the following keywords – nematodes, copepods, meiofauna deep-sea diversity, oil spill, DWH. 
+I Developed a bibliographic search with Python using keywords and new found libraries such as: Python Package Index (PyPI), bibtexparser, and scholarly.
 All the available literature was retrieved, and it will be used for a review paper on global patterns in dee-sea meiofauna diversity.
 
 **Research strategy developed:**
 - Boolean search logic (`AND` / `OR`) to refine queries and reduce noise
 - Citation mapping — starting from high-quality anchor papers and tracing references outward
 - Google dorking (advanced search syntax) to surface specific document types and sources
+- Abstract and citation databases such as Google scholar and Scopus 
 - AI-assisted abstract screening tools to efficiently filter large result sets
 - A structured logging framework to track exhausted queries and avoid redundant searches
 
 **Topic areas researched:**
 | Topic Area | Query Focus | Sources Found |
 |------------|-------------|----------------|
-| Biodiversity Patterns | Meiofauna deep-sea biodiversity, global distribution | 15 |
-| Nematodes & Harpacticoids | Deep-sea impact on nematodes and harpacticoid copepods | 14 |
-| Marine Oil Spill / DWH | Deepwater Horizon oil spill ecology and impacts | 15 |
-| **Total** | | **44** |
+| Biodiversity Patterns | Meiofauna deep-sea biodiversity, global distribution | 230 |
+| Nematodes & Harpacticoids | Deep-sea impact on nematodes and harpacticoid copepods | 230 |
+| Marine Oil Spill / DWH | Deepwater Horizon oil spill ecology and impacts | 230 |
+| **Total** | | **690** |
 
-Sources span 1992–2025, with key works from journals including *PNAS*, *Nature*, *Frontiers in Marine Science*, *Science of the Total Environment*, and *Annual Reviews of Marine Science*.
+Sources span 1992–2025, with key works from journals including *Meiofauna*, *harpacticoids*, *deep-sea impact*, *nematodes*, *marine oil spill*, and *deepwater horizon*.
 
 **Notable sources identified:**
 - Murawski et al. (2023) — overview of living marine resource vulnerability to the DWH spill
-- Ingels et al. (2023) — deep-sea meiofauna connectivity and biodiversity
-- Vanreusel et al. (2023) — meiofauna biogeography paradigms and challenges
-- Bonk et al. (2025) — harpacticoid assemblages in deep-sea trenches (most recent)
-- Fisher et al. (2016) — direct assessment of DWH impact on deep-sea ecosystems
+- Ingels et al. (2023) — Deep-sea meiofauna connectivity and biodiversity
+- Vanreusel et al. (2023) — Meiofauna biogeography paradigms and challenges
+- Bonk et al. (2025) — Harpacticoid assemblages in deep-sea trenches (most recent)
+- Fisher et al. (2016) — Direct assessment of DWH impact on deep-sea ecosystems
 
 **Status at reporting:** Research framework established, initial passes complete across all three topic areas, with work ongoing. Supervisor (Elisa) invited for a progress review meeting.
 
