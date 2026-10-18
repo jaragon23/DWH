@@ -261,7 +261,7 @@ print(f"Heatmap saved to {file_out}")
 Assigned to conduct a systematic literature search to build a scientific reference base supporting the lab's ongoing research, across three core topic areas relevant to the DWH project and meiofauna ecology.
 
 I Developed a bibliographic search with Python using keywords and new found libraries such as: Python Package Index (PyPI), bibtexparser, and scholarly.
-All the available literature was retrieved, and it will be used for a review paper on global patterns in dee-sea meiofauna diversity.
+All the available literature was retrieved, and it will be used for a review paper on global patterns in deep-sea meiofauna diversity.
 
 **Research strategy developed:**
 - Boolean search logic (`AND` / `OR`) to refine queries and reduce noise
